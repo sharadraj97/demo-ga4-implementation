@@ -1,4 +1,4 @@
-ody {
+body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -65,6 +65,41 @@ ul {
 
 ul li {
     margin-bottom: 10px;
+}
+
+.experience-slider {
+    position: relative;
+    overflow: hidden;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.slider-controls {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.slider-controls button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
 }
 
 footer {
