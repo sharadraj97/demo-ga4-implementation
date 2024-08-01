@@ -1,13 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
     let currentSlide = 0;
     const slides = document.querySelectorAll('.experience-slider .slide');
-    const totalSlides = 2;
+    const totalSlides = slides.length;
     const prevButton = document.getElementById('prev');
     const nextButton = document.getElementById('next');
 
     function showSlide(index) {
         const slidesContainer = document.querySelector('.experience-slider .slides');
-        slidesContainer.style.transform = `translateX(${-index * 100}%)`;
+        const slideWidth = slides[0].clientWidth;
+        slidesContainer.style.transform = `translateX(${-index * slideWidth}px)`;
     }
 
     prevButton.addEventListener('click', () => {
@@ -22,8 +23,3 @@ document.addEventListener('DOMContentLoaded', () => {
 
     showSlide(currentSlide);
 });
-
-
-
-
-
