@@ -3,98 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sharad Raj Mohta Portfolio</title>
+    <title>GA4 Demo Store</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <div class="hero-banner">
-            <h1>Sharad Raj Mohta</h1>
-            <p>Data Quality Assurance & Analytics Specialist</p>
-        </div>
+        <h1>Welcome to My Store</h1>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#summary">Summary</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#certificates">Certificates</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section id="summary">
-            <h2>Summary</h2>
-            <p>Dynamic Data Quality Assurance & Analytics Specialist with a proven track record of leading successful test deliverables and implementing rigorous testing methodologies. Adept in manual and automation testing, bug reporting, and regression testing. Skilled in complex problem-solving, dedicated team collaboration, effective time management and streamlining defect tracking processes.</p>
-        </section>
-        <section id="experience">
-            <h2>Experience</h2>
-            <div class="experience-slider">
-                <div class="slides">
-                    <div class="slide">
-                        <h3>Merkle Inspire Pvt Ltd. | Bengaluru, Karnataka</h3>
-                        <p>Analyst | 03/2021 - 09/2023</p>
-                        <ul>
-                            <li>Collaborated with clients, marketing teams, data analytics teams, and developers to design and implement strategies for testing and quality assurance of web analytics implementations throughout the project lifecycle.</li>
-                            <li>Enhanced data accuracy and reliability through rigorous testing and quality assurance practices pertaining to Web Analytics, various Tag Management Systems, and CDP.</li>
-                            <li>Developed and maintained comprehensive documentation for web analytics implementations and quality assurance processes.</li>
-                            <li>Ensured the seamless performance of data pipelines and accuracy of data collection.</li>
-                            <li>Conducted several online knowledge-sharing sessions to acquaint the team's new members with the existing in-house QA and Analytics framework.</li>
-                        </ul>
-                    </div>
-                    <div class="slide">
-                        <h3>Ugam Solutions Pvt Ltd. | Bengaluru, Karnataka</h3>
-                        <p>Consultant Intern | 03/2021 - 07/2021</p>
-                        <ul>
-                            <li>Conducted daily traffic analysis utilizing Adobe Analytics Workspace, SQL queries, and various browser plugins such as AEP Cloud Debugger and GA/GTM, along with Excel, to identify and report anomalies in analytics implementation on client's websites and data flow in Adobe Cloud.</li>
-                            <li>Generated comprehensive monthly and weekly performance reports for client's websites using MS Excel.</li>
-                            <li>Automated data collection from Adobe Cloud to MS Excel through Adobe’s Report Builder API, enhancing efficiency and accuracy in reporting.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="slider-controls">
-                    <button id="prev">Previous</button>
-                    <button id="next">Next</button>
-                </div>
-            </div>
-        </section>
-        <section id="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>SQL, MySQL, MS SSMS (Microsoft SQL Server Management Studio)</li>
-                <li>SQL Server Reporting Services, Databases, Python, JavaScript, HTML, CSS, JQuery, Excel, Microsoft Office</li>
-                <li>Selenium, C/C++, Object-Oriented Programming, Pandas, NumPy & Matplotlib</li>
-                <li>Agile Methodology, Adobe Analytics, Report Preparation, Quality Assurance, Testing</li>
-                <li>Debugging, Troubleshooting, Test Automation, Problem Solving, Teamwork, Jira, Windows, Cybersecurity basics</li>
-            </ul>
-        </section>
-        <section id="education">
-            <h2>Education</h2>
-            <h3>Manipal Institute of Technology | Udupi (Manipal), Karnataka</h3>
-            <p>B.Tech in Computer Science & Engineering | 09/2021</p>
-            <p>CGPA - 6.75</p>
-            <p>Ranked 19 in Manipal University Entrance Test-2021 and received 65% scholarship under AICTE category.</p>
-        </section>
-        <section id="certificates">
-            <h2>Certificates</h2>
-            <ul>
-                <li>Big Data Modeling & Management Systems - Coursera (Mar 2021)</li>
-                <li>Big Data Integration & Processing - Coursera (April 2021)</li>
-                <li>Exploratory Data Analysis for ML - IBM Skills Network</li>
-            </ul>
-        </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Sharad Raj Mohta</p>
-            <p>Phone: 8310174393</p>
-            <p>Email: <a href="mailto:sharadraj97@gmail.com">sharadraj97@gmail.com</a></p>
-            <p>Location: Jalpaiguri, West Bengal</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Sharad Raj Mohta. All rights reserved.</p>
-    </footer>
+
+    <section class="hero-banners">
+        <div class="banner" id="banner1">
+            <h2>Banner 1</h2>
+            <button class="know-more">Know More</button>
+            <button class="next" onclick="nextBanner()">Next</button>
+        </div>
+        <div class="banner" id="banner2">
+            <h2>Banner 2</h2>
+            <button class="know-more">Know More</button>
+            <button class="next" onclick="nextBanner()">Next</button>
+        </div>
+    </section>
+
+    <section class="products">
+        <div class="product">
+            <img src="product1.jpg" alt="Product 1">
+            <button class="get-details">Get Details</button>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="product2.jpg" alt="Product 2">
+            <button class="get-details">Get Details</button>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="product3.jpg" alt="Product 3">
+            <button class="get-details">Get Details</button>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </section>
+
+    <section class="signup-form">
+        <form>
+            <label for="email">Email address:</label>
+            <input type="email" id="email" name="email" required>
+            <button type="submit">Sign Up for Updates</button>
+        </form>
+    </section>
+
+    <section class="slider">
+        <label for="slider">Slide me, & I will know!</label>
+        <input type="range" id="slider" name="slider" min="0" max="100">
+    </section>
+
     <script src="scripts.js"></script>
 </body>
 </html>
