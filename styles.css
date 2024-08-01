@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+main {
+    padding: 1em;
+}
+
+.buttons button, .service button {
+    margin: 0.5em;
+    padding: 0.5em 1em;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttons button:hover, .service button:hover {
+    background-color: #0056b3;
+}
+
+form {
+    margin: 1em 0;
+}
+
+form label {
+    display: block;
+    margin: 0.5em 0;
+}
+
+form input {
+    padding: 0.5em;
+    margin: 0.5em 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #218838;
+}
+
+.services .service {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1em;
+    margin: 1em 0;
+}
+
+.cart {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1em;
+    margin: 1em 0;
+}
