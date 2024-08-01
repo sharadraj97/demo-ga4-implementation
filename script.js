@@ -23,3 +23,17 @@ function updateCart() {
     });
     totalElement.textContent = `Total: $${total}`;
 }
+
+// Example: Adding event listeners for sliders
+document.addEventListener('DOMContentLoaded', (event) => {
+    const slider1 = document.getElementById('slider1');
+    const slider2 = document.getElementById('slider2');
+
+    slider1.addEventListener('input', function() {
+        console.log('Slider 1 value:', this.value);
+    });
+
+    slider2.addEventListener('input', function() {
+        console.log('Slider 2 value:', this.value);
+    });
+});
