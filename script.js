@@ -1,25 +1,16 @@
+let currentBanner = 0;
+const banners = document.querySelectorAll('.banner');
+
+function nextBanner() {
+    banners[currentBanner].style.display = 'none';
+    currentBanner = (currentBanner + 1) % banners.length;
+    banners[currentBanner].style.display = 'block';
+}
+
 document.addEventListener('DOMContentLoaded', () => {
-    let currentSlide = 0;
-    const slides = document.querySelectorAll('.experience-slider .slides');
-    const totalSlides = slides.length;
-    const prevButton = document.getElementById('prev');
-    const nextButton = document.getElementById('next');
-
-    function showSlide(index) {
-        const slidesContainer = document.querySelector('.experience-slider .slides');
-        const slideWidth = slides[0].clientWidth;
-        slidesContainer.style.transform = `translateX(${-index * slideWidth}px)`;
-    }
-
-    prevButton.addEventListener('click', () => {
-        currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-        showSlide(currentSlide);
+    banners.forEach((banner, index) => {
+        if (index !== currentBanner) {
+            banner.style.display = 'none';
+        }
     });
-
-    nextButton.addEventListener('click', () => {
-        currentSlide = (currentSlide + 1) % totalSlides;
-        showSlide(currentSlide);
-    });
-
-    showSlide(currentSlide);
 });
