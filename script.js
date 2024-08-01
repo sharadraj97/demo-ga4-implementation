@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     let currentSlide = 0;
     const slides = document.querySelectorAll('.experience-slider .slide');
-    const totalSlides = slides.length;
+    const totalSlides = 2;
     const prevButton = document.getElementById('prev');
     const nextButton = document.getElementById('next');
 
