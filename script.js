@@ -36,12 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
             console.error('Error:', error);
         });
 
-        // Or trigger a Google Analytics event
-        if (typeof gtag === 'function') {
-            gtag('event', 'submit', {
-                'event_category': 'Form',
-                'event_label': 'Sign Up for Updates'
-            });
+      
         }
     });
 });
