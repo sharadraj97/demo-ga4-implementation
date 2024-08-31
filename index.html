@@ -44,6 +44,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             imageElement.src="img2.jpg";
 
         }
+        function getBannerTitle() {
+    var ele = {{Click Element}}; 
+    var parent = ele.closest(".banner"); 
+    
+    if (parent) {
+        var title = parent.querySelector("h2"); 
+        if (title) {
+          console.log(title.textContent);
+            
+        }
+    }
+   ; // Return "NA" if no banner or h2 is found
+}
+
         
     </script>
 
