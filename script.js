@@ -1,25 +1,19 @@
 
+window.onload = function(e) {
+    var img_object1 = document.getElementById("img1");
+    img_object1.addEventListener("mouseenter", dataLayerOps1);
 
-    window.onload = function(e)
-        {
-            var img_object1 = document.getElementById("img1");
-            img_object.addEventListener("mouseenter",dataLayerOps1);
+    var img_object2 = document.getElementById("img2");
+    img_object2.addEventListener("mouseenter", dataLayerOps2);
+}
 
-             var img_object2 = document.getElementById("img2");
-            img_object.addEventListener("mouseenter",dataLayerOps2);
-            
-        }
+function dataLayerOps1() {
+    dataLayer.push({ event: "image_hover", img_no: "1" });
+}
 
-    function dataLayerOps1()
-        {
-            dataLayer.push({event : "image_hover" , img_no = "1" });
-        }
-
-     function dataLayerOps2()
-        {
-            dataLayer.push({event : "image_hover" , img_no = "2" });
-        }
-    
+function dataLayerOps2() {
+    dataLayer.push({ event: "image_hover", img_no: "2" });
+}
 
     // Form submission event handling
     const form = document.getElementById('signup-form');
