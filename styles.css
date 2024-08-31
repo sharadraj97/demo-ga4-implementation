@@ -11,7 +11,7 @@ header {
 
 .hero-banners {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
     margin: 20px 0;
 }
 
@@ -22,10 +22,7 @@ header {
     position: relative;
 }
 
-.banner .know-more,
-.banner .next {
-    margin-top: 10px;
-}
+
 
 .products {
     display: flex;
