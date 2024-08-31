@@ -67,7 +67,7 @@ button {
     position: fixed; /* or absolute */
     bottom: 0;       /* Sticks the section to the bottom of the page */
     left: 0;         /* Moves the section to the left corner */
-    width: auto;     /* Adjust width as necessary */
+    width: 400px;     /* Adjust width as necessary */
     padding: 10px;   /* Optional padding */
     background-color: #f0f0f0; /* Optional background for visibility */
 }
