@@ -68,7 +68,8 @@ button {
     bottom: 0;       /* Sticks the section to the bottom of the page */
     left: 0;         /* Moves the section to the left corner */
     width: 400px;     /* Adjust width as necessary */
-    padding: 10px;   /* Optional padding */
+    padding: 10px;  
+    font-size: 80%;/* Optional padding */
     background-color: #f0f0f0; /* Optional background for visibility */
 }
 
