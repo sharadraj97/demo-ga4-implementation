@@ -1,10 +1,4 @@
 
-document.addEventListener('DOMContentLoaded', () => {
-    banners.forEach((banner, index) => {
-        if (index !== currentBanner) {
-            banner.style.display = 'none';
-        }
-    });
 
     window.onload = function(e)
         {
