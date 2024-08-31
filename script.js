@@ -2,14 +2,22 @@
 
     window.onload = function(e)
         {
-            var img_object = document.getElementById("img1");
-            img_object.addEventListener("mouseenter",dataLayerOps);
+            var img_object1 = document.getElementById("img1");
+            img_object.addEventListener("mouseenter",dataLayerOps1);
+
+             var img_object2 = document.getElementById("img2");
+            img_object.addEventListener("mouseenter",dataLayerOps2);
             
         }
 
-    function dataLayerOps()
+    function dataLayerOps1()
         {
-            dataLayer.push({event : "image_hover" , img_no = 1 });
+            dataLayer.push({event : "image_hover" , img_no = "1" });
+        }
+
+     function dataLayerOps2()
+        {
+            dataLayer.push({event : "image_hover" , img_no = "2" });
         }
     
 
