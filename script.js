@@ -6,6 +6,19 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    window.onload = function(e)
+        {
+            var img_object = document.getElementById("img1");
+            img_object.addEventListener("mouseenter",dataLayerOps);
+            
+        }
+
+    function dataLayerOps()
+        {
+            dataLayer.push({event : "image_hover" , img_no = 1 });
+        }
+    
+
     // Form submission event handling
     const form = document.getElementById('signup-form');
     form.addEventListener('submit', function(e) {
