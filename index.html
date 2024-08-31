@@ -82,6 +82,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 </section>
+    <script> window.onload = function() {
+    var img_object1 = document.getElementById("img1");
+    img_object1.addEventListener("mouseenter", dataLayerOps1);
+
+    var img_object2 = document.getElementById("img2");
+    img_object2.addEventListener("mouseenter", dataLayerOps2);
+}
+
+function dataLayerOps1() {
+    dataLayer.push({ event: "image_hover", img_no: "1" });
+}
+
+function dataLayerOps2() {
+    dataLayer.push({ event: "image_hover", img_no: "2" });
+}
+        </script>
+        
 
     <script src="scripts.js"></script>
 </body>
